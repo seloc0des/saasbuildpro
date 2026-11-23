@@ -1,6 +1,6 @@
 -- ============================================================================
 -- STANDALONE VERTICAL COMPLIANCE SAAS — POSTGRESQL / SUPABASE SCHEMA
--- Multi-tenant architecture with strict Row-Level Security (RLS)
+-- Draft tenant tables and RLS policies; deployment grants and isolation require testing
 -- ============================================================================
 
 -- Enable UUID extension
@@ -50,7 +50,7 @@ CREATE TABLE public.credentials (
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
--- 4. NOTIFICATION LOGS (Prevents duplicate alerts)
+-- 4. NOTIFICATION LOGS (unique per credential, threshold, renewal date and channel)
 CREATE TABLE public.notification_logs (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     credential_id UUID NOT NULL REFERENCES public.credentials(id) ON DELETE CASCADE,
@@ -117,7 +117,7 @@ CREATE POLICY "Users can view notification logs for own clinic"
     );
 
 -- ============================================================================
--- HELPER VIEW FOR DAILY CRON SCANNER
+-- HELPER VIEW FOR PROPOSED DAILY SCANNER (exact database-date matches; no schedule installed)
 -- ============================================================================
 CREATE OR REPLACE VIEW public.v_pending_reminders AS
 SELECT

@@ -1,5 +1,5 @@
-Staff Name,Role,Email,Credential Type,License / Cert Number,Issuing State,Expiration Date,90-Day Alert Date,30-Day Alert Date,Status,Notes
-Jane Doe,Dental Hygienist,jane@exampleclinic.com,State RDH License,RDH-48291,MA,2027-03-31,2026-12-31,2027-03-01,Active,Requires 20 CE credits prior to renewal
-John Smith,Dentist (DDS),john@exampleclinic.com,DEA Registration,FS1234567,Federal,2027-06-30,2027-04-01,2027-05-31,Active,Controlled substance renewal
-Sarah Lee,Dental Assistant,sarah@exampleclinic.com,BLS / CPR Certification,BLS-99201,AHA,2027-01-15,2026-10-17,2026-12-16,Expiring Soon,Schedule renewal class
-Sarah Lee,Dental Assistant,sarah@exampleclinic.com,Dental Radiology Permit,RAD-77412,MA,2027-09-30,2027-07-02,2027-08-31,Active,Certificate scanned in binder
+Staff Name,Role,Email,Credential Type,License / Cert Number,Issuing State or Authority,Expiration Date,90-Day Alert Date,60-Day Alert Date,30-Day Alert Date,7-Day Alert Date,0-Day Alert Date,Status as of 2026-11-23,Notes
+Jane Doe,Dental Hygienist,jane@example.org,State RDH License,DEMO-001,MA,2027-03-31,2026-12-31,2027-01-30,2027-03-01,2027-03-24,2027-03-31,Valid,Confirm individual CE requirements with issuing board
+John Smith,Dentist (DDS),john@example.org,DEA Registration,DEMO-002,Federal,2027-06-30,2027-04-01,2027-05-01,2027-05-31,2027-06-23,2027-06-30,Valid,Controlled substance renewal
+Sarah Lee,Dental Assistant,sarah@example.org,BLS / CPR Certification,DEMO-003,AHA,2027-01-15,2026-10-17,2026-11-16,2026-12-16,2027-01-08,2027-01-15,Expiring Soon,Schedule renewal class
+Sarah Lee,Dental Assistant,sarah@example.org,Dental Radiology Permit,DEMO-004,MA,2027-09-30,2027-07-02,2027-08-01,2027-08-31,2027-09-23,2027-09-30,Valid,Certificate scanned in binder
